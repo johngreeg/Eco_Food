@@ -1,0 +1,41 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	font-family: Montserrat;
+}
+
+.container {
+	width: 1000px;
+	height: auto;
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+
+
+
+/* HEADER */
+
+.navigation {
+	background-color: #f8f8f8;
+	height: 85px;
+	width: 100%;
+}
+
+
+/* END HEADER */
+
+/* INTRO */
+
+.intro {
+	margin: 0 auto 0 auto;
+	padding: 0;
+}
+
+.intro img {
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+/* END INTRO */
