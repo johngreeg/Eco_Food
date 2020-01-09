@@ -1,41 +1,56 @@
 html, body {
 	padding: 0;
 	margin: 0;
-	font-family: Montserrat;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .container {
-	width: 1000px;
+	width: 1600px;
 	height: auto;
 	margin: 0 auto 0 auto;
 	padding: 0;
 }
-
-
-
-
-/* HEADER */
-
-.navigation {
-	background-color: #f8f8f8;
-	height: 85px;
-	width: 100%;
-}
-
-
-/* END HEADER */
-
-/* INTRO */
 
 .intro {
 	margin: 0 auto 0 auto;
 	padding: 0;
 }
 
-.intro img {
-	margin: 0 auto 0 auto;
-	padding: 0;
+.intro-img {
+	height: 100%;
 	width: 100%;
+	float: left;
+
+	margin: 0 auto 0 auto;
 }
 
-/* END INTRO */
+.nav {
+	/*background-color: #860c0c;*/
+	padding: 0 0px 0 0px;
+	width: 1600px;
+	float: left;
+	margin: -934px 0 0 0;
+	height: 80px;
+}
+
+.nav h4 {
+	color: #fff;
+	padding: 29px 18px 29px 18px;
+	margin: 0;
+	float: right;
+	font-weight: 100;
+	font-size: 17px;
+}
+
+.nav .logo {
+	padding: 25px 18px 25px 18px;
+	margin: 0;
+	float: left;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+
+.logo-2 {
+	color: #0cce8f;
+}
