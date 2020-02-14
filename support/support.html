@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="support.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+	<meta charset="utf-8">
+	<title>Eco Food</title>
+</head>
+<body>
+
+
+
+	<div class="nav">
+		<div class="container">
+			<h2 class="logo"><a href="../index/index.html"><span class="logo-1">Eco</span> <span class="logo-2">Food</span></a></h2>
+			<h4><a href="#openModalLogIn">Войти</a></h4>
+			<h4><a href="#openModalSingUp">Зарегистрироваться</a></h4>
+			<h4><a class="active-border"  href="../support/support.html">Поддержка</a></h4>
+			<h4><a href="../ubout-us/about-us/html">О нас</a></h4>
+			<div class="dropdown">
+			    <a href="#" class="dropbtn">Русский (RU)</a>
+			    <div class="dropdown-content">
+			    <a href="about-us.html">Polski (PL)</a>
+			    </div>
+			</div>
+			<h2 class="nav-title">Центр помощи</h2>
+		</div>
+	</div>
+
+	<div id="openModalSingUp" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Зарегистрируйтесь по электронной почте</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <form>
+            	<div class="modal-form">
+            		<input class="e-mail" type="email" name="login" placeholder="Электронный адресс">
+            		<input class="name" type="text" name="name" placeholder="Имя">
+            		<input class="surname" type="text" name="surname"  placeholder="Фамилия">
+            		<input class="password" type="password" name="password" placeholder="Придумайте пароль">
+            		<p class="mailing">Eco Food будет отправлять вам по электронной почте эксклюзивные предложения, идеи, акции и обновления правил. Вы можете отказаться от них в настройках аккаунта или непосредственно в маркетинговом уведомлении.</p>
+            		<label class="form-checkbox">
+					    <input type="checkbox" checked="checked">
+					    <span class="checkmark"></span>
+					</label>
+					<p class="checkbox-text">Я не хочу получать рекламные сообщения от Eco Food.</p>
+            		<a href="#"><p><input class="submit" type="submit" value="Регистрация"></p></a>
+            		<p class="registration-login">У вас уже есть аккаунт?&nbsp;&nbsp;<span><a href="#openModalLogIn">Войти</a></span></p>
+            	</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalSingUp"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalSingUp').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalSingUp').style.marginLeft = '0px';
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+  if (location.hash === '#openModalSingUp') {
+    if (!e.target.closest('.modal-dialog')) {
+      location.hash = '#close';
+    }
+  }
+});
+  </script>
+
+
+  <div id="openModalLogIn" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Войдите с помощью электронной почты</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <form>
+            	<div class="modal-form">
+            		<input class="e-mail" type="email" name="login" placeholder="Электронный адресс">
+            		<input class="password" type="password" name="password" placeholder="Пароль">
+            		<label class="form-checkbox">
+					    <input type="checkbox" checked="checked">
+					    <span class="checkmark"></span>
+					</label>
+					<p class="checkbox-text">Запомнить меня</p>
+            		<a href="#"><p><input class="submit" type="submit" value="Войти"></p></a>
+            		<p class="registration-login">У вас нет аккаунта?&nbsp;&nbsp;<span><a href="#openModalSingUp">Зарегистрироваться</a></span></p>
+            	</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
+      console.log(scrollbar);
+      document.querySelector('[href="#openModalLogIn"]').addEventListener('click', function () {
+        document.body.style.overflow = 'hidden';
+        document.querySelector('#openModalLogIn').style.marginLeft = scrollbar;
+      });
+      document.querySelector('[href="#close"]').addEventListener('click', function () {
+        document.body.style.overflow = 'visible';
+        document.querySelector('#openModalLogIn').style.marginLeft = '0px';
+      });
+    });
+
+    document.addEventListener('click', function (e) {
+  if (location.hash === '#openModalLogIn') {
+    if (!e.target.closest('.modal-dialog')) {
+      location.hash = '#close';
+    }
+  }
+});
+  </script>
+
+
+	<div class="container-4">
+		<div class="content">
+
+			<h1 class="content-title">Добро пожаловать в центр помощи Eco Food</h1>
+			<h2 class="qwerty-1">Войдите, чтобы получить индивидуальную поддержку</h2>
+			<p class="qwerty-2">Получите помощь с бронированиями, аккаунтом и по другим вопросам.</p>
+			<a href="#openModalSingUp"><div class="content-registration">
+				<h3 class="qwerty-3">Регистрация</h3>
+			</div></a>
+			<a href="#openModalLogIn"><div class="content-login">
+				<h3 class="qwerty-4">Войти</h3>
+			</div></a>
+
+			<div class="articles">
+				<h2 class="articles-h2">Популярные статьи</h2>
+				<div class="articles-1">
+					<a href="#"><div class="articles-text">
+						<h1>Как поменять или сбросить пароль?</h1>
+						<p class="articles-description">Если вы забыли пароль или не можете войти в аккаунт, откройте страницу сброса пароля...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-2">
+					<a href="#"><div class="articles-text">
+						<h1>Как создать аккаунт?</h1>
+						<p class="articles-description">Если у вас еще нет аккаунта Airbnb, перейдите на airbnb.com и кликните зарегистрироваться...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-3">
+					<a href="#"><div class="articles-text">
+						<h1>Что такое Eco Food и как это работает?</h1>
+						<p class="articles-description">Eco Food существует с 2020 года, с тех пор как два повара...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-4">
+					<a href="#"><div class="articles-text">
+						<h1>Lorem ipsum dolor sit amet?</h1>
+						<p class="articles-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-5">
+					<a href="#"><div class="articles-text">
+						<h1>Lorem ipsum dolor sit amet?</h1>
+						<p class="articles-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-6">
+					<a href="#"><div class="articles-text">
+						<h1>Lorem ipsum dolor sit amet?</h1>
+						<p class="articles-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-7">
+					<a href="#"><div class="articles-text">
+						<h1>Lorem ipsum dolor sit amet?</h1>
+						<p class="articles-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+				<div class="articles-8">
+					<a href="#"><div class="articles-text">
+						<h1>Lorem ipsum dolor sit amet?</h1>
+						<p class="articles-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim...</p>
+						<p class="articles-link">Подробнее ></p>
+					</div></a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<div class="container-3">
+			<div class="footer-1">
+				<h3>Eco Food</h3>
+				<a href="index.html"><p>О нас</p></a>
+				<a href="index.html"><p>Карьера</p></a>
+				<a href="index.html"><p>Стать партнером</p></a>
+				<a href="index.html"><p>Клиентам</p></a>
+				<a href="index.html"><p>Все повара</p></a>
+				<a href="index.html"><p>Кухни</p></a>
+			</div>
+			<div class="footer-2">
+				<h3>Eco Food</h3>
+				<a href="index.html"><p>О нас</p></a>
+				<a href="index.html"><p>Карьера</p></a>
+				<a href="index.html"><p>Стать партнером</p></a>
+				<a href="index.html"><p>Клиентам</p></a>
+				<a href="index.html"><p>Все повара</p></a>
+				<a href="index.html"><p>Кухни</p></a>
+			</div>
+			<div class="footer-3">
+				<h3>Eco Food</h3>
+				<a href="index.html"><p>О нас</p></a>
+				<a href="index.html"><p>Карьера</p></a>
+				<a href="index.html"><p>Стать партнером</p></a>
+				<a href="index.html"><p>Клиентам</p></a>
+				<a href="index.html"><p>Все повара</p></a>
+				<a href="index.html"><p>Кухни</p></a>
+			</div>
+			<div class="footer-4">
+				<h3>Eco Food</h3>
+				<a href="index.html"><p>О нас</p></a>
+				<a href="index.html"><p>Карьера</p></a>
+				<a href="index.html"><p>Стать партнером</p></a>
+				<a href="index.html"><p>Клиентам</p></a>
+				<a href="index.html"><p>Все повара</p></a>
+				<a href="index.html"><p>Кухни</p></a>
+			</div>
+			<div class="footer-border"></div>
+			<div class="footer-bottom">
+				<h4>&copy; 2020 Eco Food, Inc. All rights reserved.&nbsp;&nbsp;<a href="index.html">Условия</a> &bull; <a href="index.html">Конфиденциальность</a> &bull; <a href="index.html">Карта сайта</a></h4>
+				<a href="https://www.instagram.com/" target="_blank"><img src="../images/social-media/instagram.png"></a>
+				<a href="https://www.twitter.com/" target="_blank"><img src="../images/social-media/twitter.png"></a>
+				<a href="https://www.vk.com/" target="_blank"><img src="../images/social-media/vk.png"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="../images/social-media/facebook.png"></a>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
